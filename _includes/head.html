@@ -8,7 +8,6 @@
 
     <!-- Preload critical assets -->
     <link rel="preload" href="{{ '/assets/css/style.css' | relative_url }}" as="style">
-    <link rel="preload" href="{{ '/assets/css/blog.css' | relative_url }}" as="style">
     <link rel="preload" href="{{ '/assets/js/animate-asterisk.js' | relative_url }}" as="script">
     <link rel="preload" href="{{ '/assets/fonts/Copernicus-Book.woff2' | relative_url }}" as="font" type="font/woff2"
         crossorigin>
@@ -70,8 +69,4 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {% if page.layout != 'home' %}
-    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/slideshow.css' | relative_url }}">
-    {% endif %}
 </head>

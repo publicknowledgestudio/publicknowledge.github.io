@@ -1,0 +1,11 @@
+// Import partials
+@import "variables";
+@import "typography";
+@import "layout";
+@import "components";
+
+// Import remaining styles from original files
+// These will be refactored and their content moved to partials later
+@import "_style"; // Original _style.scss (now acting as a general styles partial)
+@import "blog";
+@import "slideshow";

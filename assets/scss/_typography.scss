@@ -1,0 +1,109 @@
+// Typography (font-face, headings, body text, links, etc.)
+
+@font-face {
+    font-family: 'Copernicus';
+    src: url('../fonts/Copernicus-Book.woff2') format('woff2'),
+        url('../fonts/Copernicus-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Copernicus';
+    src: url('../fonts/Copernicus-BookItalic.woff2') format('woff2'),
+        url('../fonts/Copernicus-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tasa Orbiter Deck';
+    src: url('../fonts/TASAOrbiterVF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-stack-serif);
+    font-size: var(--font-size-base);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-base);
+    color: var(--text-reg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+    font-family: var(--font-stack-sans);
+    line-height: var(--line-height-tight);
+}
+
+h1 {
+    font-size: var(--font-size-4xl);
+}
+
+.serif {
+    font-family: var(--font-stack-serif);
+}
+
+.sans {
+    font-family: var(--font-stack-sans);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.line-height-tight {
+    line-height: var(--line-height-tight);
+}
+
+.secondary {
+    color: var(--text-secondary);
+}
+
+.superscript {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.huge-text {
+    font-size: var(--font-size-4xl);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+}
+
+a {
+    color: var(--text-reg);
+    text-decoration: none;
+    -webkit-transition: color var(--transition-fast);
+    -o-transition: color var(--transition-fast);
+    transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-color);
+}
+
+a:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
+}
+
+/* Startup CTA specific link styles */
+a.startup-cta,
+a.startup-cta:visited,
+a.startup-cta:hover,
+a.startup-cta:active {
+    color: var(--charcoal);
+}
